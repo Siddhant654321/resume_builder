@@ -1,11 +1,13 @@
 import './HeroSection.css';
 import hero_image from '../assets/hero_image.png';
 import BlurredSVG from './BlurredSVG';
-import test_svg from '../assets/test.svg'
+
 const HeroSection = () => {
   return (
     <main className='hero_section_container'>
-      <BlurredSVG className='blurred_svg' />
+      <BlurredSVG className='blurred_svg ellipse_1' />
+      <BlurredSVG className='blurred_svg ellipse_2' width={786} height={682} />
+      <BlurredSVG className='blurred_svg ellipse_3' width={847} height={564} />
       <div>
         <p>Hi There!</p>
         <h1><span className='purple_text'>TITLE</span> BRINGS YOU THE BEST RESUME</h1>

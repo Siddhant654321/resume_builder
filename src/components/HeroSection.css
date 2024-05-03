@@ -3,6 +3,8 @@
     padding: 20px 100px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    overflow-x: clip;
 }
 
 .hero_section_container * {
@@ -62,4 +64,19 @@
     fill: #b30dee;
     filter: blur(150px);
     z-index: -99999;
+}
+
+.ellipse_1 {
+    top: -15%;
+    left: -10%;
+}
+
+.ellipse_2 {
+    right: -10%;
+    top: 25%;
+}
+
+.ellipse_3 {
+    left: 20%;
+    top: 50%;
 }
