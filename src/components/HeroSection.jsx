@@ -1,9 +1,18 @@
 import './HeroSection.css';
+import hero_image from '../assets/hero_image.png';
 
 const HeroSection = () => {
   return (
-    <main>
-      
+    <main className='hero_section_container'>
+      <div>
+        <p>Hi There!</p>
+        <h1><span className='purple_text'>TITLE</span> BRINGS YOU THE BEST RESUME</h1>
+        <p>Getting a job has never been more easier before.</p>
+        <button>Get Started</button>
+      </div>
+      <div>
+        <img src={hero_image} alt="" />
+      </div>
     </main>
   )
 }
