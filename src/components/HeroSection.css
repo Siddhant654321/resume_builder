@@ -55,3 +55,11 @@
 .hero_section_container img {
     width: 500px;
 }
+
+.blurred_svg {
+    position: absolute;
+    border-radius: 100%;
+    fill: #b30dee;
+    filter: blur(150px);
+    z-index: -99999;
+}
