@@ -24,3 +24,52 @@
     gap: 42px;
     font-size: 24px;
 }
+
+.hamburger_icon,
+.close_icon {
+    display: none;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
+
+@media (max-width: 764px) {
+    .nav_container h1 {
+        font-size: 38px;
+    }
+    
+    .nav_container ul {
+        list-style: none;
+        display: flex;
+        gap: 42px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hamburger_icon,
+    .close_icon {
+        display: block;
+    }
+
+    .nav_container {
+        flex-wrap: wrap;
+    }
+
+    .nav_container h1 {
+        align-self: flex-start;
+    }
+
+    .nav_container ul {
+        text-align: center;
+        gap: 15px;
+        flex-direction: column;
+        min-width: 100%;
+        padding: 0px;
+    }
+
+    .nav_container .hidden {
+        display: none;
+    }
+
+}
