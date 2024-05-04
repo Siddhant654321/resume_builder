@@ -8,7 +8,7 @@ const HeroSection = () => {
       <BlurredSVG className='blurred_svg ellipse_1' />
       <BlurredSVG className='blurred_svg ellipse_2' width={786} height={682} />
       <BlurredSVG className='blurred_svg ellipse_3' width={847} height={564} />
-      <div>
+      <div className='first_child'>
         <p>Hi There!</p>
         <h1><span className='purple_text'>TITLE</span> BRINGS YOU THE BEST RESUME</h1>
         <p>Getting a job has never been more easier before.</p>
