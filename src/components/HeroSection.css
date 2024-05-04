@@ -62,7 +62,7 @@
     position: absolute;
     border-radius: 100%;
     fill: #b30dee;
-    filter: blur(150px);
+    filter: blur(100px);
     z-index: -99999;
 }
 
