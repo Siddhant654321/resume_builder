@@ -1,4 +1,5 @@
 import FeatureSection from "./components/FeatureSection"
+import FooterSection from "./components/FooterSection"
 import HeroSection from "./components/HeroSection"
 import HomePageBottom from "./components/HomePageBottom"
 import Navbar from "./components/Navbar"
@@ -12,6 +13,7 @@ const App = () => {
       <FeatureSection />
       <TestimonialsSection />
       <HomePageBottom />
+      <FooterSection />
     </div>
   )
 }
