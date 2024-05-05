@@ -98,18 +98,25 @@ const TestimonialsSection = () => {
       <div className="testimonial_tab_main_container">
         <div className="testimonial_tab_sub_container">
           {testimonials_first_set.map((testimonial, index) => (
-            <TestimonialTab key={index} {...testimonial} />
+            <TestimonialTab key={'1'+index} {...testimonial} />
           ))}
         </div>
         <div className="testimonial_tab_sub_container">
           {testimonials_second_set.map((testimonial, index) => (
-            <TestimonialTab key={index} {...testimonial} />
+            <TestimonialTab key={'2'+index} {...testimonial} />
           ))}
         </div>
-        <div className="testimonial_tab_sub_container">
+        <div className="testimonial_tab_sub_container hide_testimonials">
           {testimonials_third_set.map((testimonial, index) => (
-            <TestimonialTab key={index} {...testimonial} />
+            <TestimonialTab key={'3'+index} {...testimonial} />
           ))}
+        </div>
+        <div className="testimonial_tab_sub_container show_testimonials">
+          <TestimonialTab {...testimonials_third_set[0]} />
+          <div>
+            <TestimonialTab {...testimonials_third_set[1]} />
+            <TestimonialTab {...testimonials_third_set[2]} />
+          </div>
         </div>
       </div>
     </div>
