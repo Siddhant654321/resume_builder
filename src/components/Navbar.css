@@ -25,6 +25,19 @@
     font-size: 24px;
 }
 
+.nav_container ul li {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.nav_container ul li:hover {
+    color: #B30DEE;
+}
+
+.nav_container ul li:active {
+    opacity: 0.8;
+}
+
 .hamburger_icon,
 .close_icon {
     display: none;
