@@ -4,7 +4,8 @@
     align-items: center;
     margin-bottom: 100px;
     padding: 0px 25px;
-    overflow: clip;
+    overflow-x: clip;
+    position: relative;
 }
 
 .bottom_section_heading {
