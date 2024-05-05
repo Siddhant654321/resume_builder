@@ -18,6 +18,11 @@
     font-size: 48px;
 }
 
+.nav_container h1 a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
 .nav_container ul {
     list-style: none;
     display: flex;
@@ -25,16 +30,18 @@
     font-size: 24px;
 }
 
-.nav_container ul li {
+.nav_container ul li a {
     transition: all 0.3s;
     cursor: pointer;
+    color: #f8f8f8;
+    text-decoration: none;
 }
 
-.nav_container ul li:hover {
+.nav_container ul li a:hover {
     color: #B30DEE;
 }
 
-.nav_container ul li:active {
+.nav_container ul li a:active {
     opacity: 0.8;
 }
 

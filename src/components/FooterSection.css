@@ -23,10 +23,15 @@
     margin: 0px;
 }
 
+.top_section h1 a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
 .top_section h1,
 .right_section h3 {
     font-family: var(--font-family);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .right_section h3 {
@@ -39,20 +44,22 @@
     padding: 0px;
 }
 
-.right_section ul li {
+.right_section ul li a {
     margin-bottom: 11px;
     font-family: var(--second-family);
     font-size: 25px;
     font-weight: 400;
     transition: all 0.3s;
     cursor: pointer;
+    color: #f8f8f8;
+    text-decoration: none;
 }
 
-.right_section ul li:hover {
+.right_section ul li a:hover {
     color: #B30DEE;
 }
 
-.right_section ul li:active {
+.right_section ul li a:active {
     opacity: 0.8;
 }
 
