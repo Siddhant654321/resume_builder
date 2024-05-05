@@ -1,9 +1,10 @@
 import './InputField.css';
 
-const InputField = () => {
+const InputField = ({ title, placeholder, type="text", inputValue, field, setInputValue }) => {
   return (
-    <div>
-        
+    <div className='input_field'>
+        <h3>{title}</h3>
+        <input placeholder={placeholder} type={type} value={inputValue.field} onChange={(e) => setInputValue(prev => ({...prev, field: e.target.value}))} />
     </div>
   )
 }
