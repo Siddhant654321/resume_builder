@@ -3,6 +3,7 @@ import close_icon from "../assets/close_icon.svg";
 import hamburger_icon from "../assets/hamburger_icon.svg";
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(() => false);
@@ -29,10 +30,10 @@ const Navbar = () => {
             <Link to="/">HOME</Link>
           </li>
           <li>
-            <Link to='/#features'>FEATURES</Link>
+            <HashLink smooth={true} to='/#features'>FEATURES</HashLink>
           </li>
           <li>
-            <Link to="/#testimonials">TESTIMONIALS</Link>
+            <HashLink smooth={true} to="/#testimonials">TESTIMONIALS</HashLink>
           </li>
           <li>
             <Link to="/signup">SIGNUP</Link>

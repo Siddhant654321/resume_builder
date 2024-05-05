@@ -23,7 +23,7 @@ const FeatureSection = () => {
     },
   ];
   return (
-    <div className="feature_section">
+    <div className="feature_section" id="features">
     <h1 className="section_main_heading">FEATURES</h1>
       <div className="feature_container">
         {features.map((feature_data, index) => (

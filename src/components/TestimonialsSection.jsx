@@ -91,7 +91,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <div className="testimonials_container">
+    <div className="testimonials_container" id="testimonials">
       <h1 className="section_main_heading testimonials_heading">
         TESTIMONIALS
       </h1>
