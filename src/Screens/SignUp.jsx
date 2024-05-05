@@ -2,6 +2,7 @@ import './Auth.css';
 import signup_image from '../assets/signup_image.png';
 import BlurredSVG from '../components/BlurredSVG';
 import InputField from '../components/InputField';
+import google_icon from '../assets/google_icon.png';
 import { useState } from 'react';
 
 const SignUp = () => {
@@ -32,10 +33,11 @@ const SignUp = () => {
       />
       <img src={signup_image} alt="" />
       <div>
-        <form>
+        <div>
           <h2>GET STARTED</h2>
           <p>Please enter your details below to continue.</p>
           <form>
+            <div className="input_field_container">
             <InputField
               title="NAME"
               placeholder="Enter your name"
@@ -43,6 +45,8 @@ const SignUp = () => {
               field="name"
               setInputValue={setInputValue}
             />
+            </div>
+            <div className="input_field_container">
             <InputField
               title="EMAIL"
               type='email'
@@ -51,16 +55,24 @@ const SignUp = () => {
               field="email"
               setInputValue={setInputValue}
             />
+            </div>
+            <div className="input_field_container">
             <InputField
               title="PASSWORD"
               type='password'
-              placeholder="**********"
+              placeholder="∗∗∗∗∗∗∗∗∗∗∗∗∗"
               inputValue={inputValue}
               field="password"
               setInputValue={setInputValue}
             />
+            </div>
+            <button type='submit' className='auth_btn'>Sign Up</button>
+            <button type="button" class="login_with_google_btn">
+                <img src={google_icon} alt="" />
+                Sign in with Google
+            </button>
           </form>
-        </form>
+        </div>
       </div>
     </main>
   );
