@@ -44,3 +44,9 @@
     bottom: 5%;
     right: 4%;
 }
+
+.auth_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
