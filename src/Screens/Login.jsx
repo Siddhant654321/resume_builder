@@ -10,6 +10,7 @@ const Login = () => {
   const [inputValue, setInputValue] = useState(() => ({
     email: "",
     password: "",
+    isRememberMe: false,
   }));
 
   return (
@@ -60,6 +61,13 @@ const Login = () => {
                 <input
                   class="checkbox__trigger visuallyhidden"
                   type="checkbox"
+                  checked={inputValue.isRememberMe}
+                  onChange={(event) =>
+                    setInputValue((prev) => ({
+                      ...prev,
+                      isRememberMe: event.target.checked,
+                    }))
+                  }
                 />
                 <span class="checkbox__symbol">
                   <svg
