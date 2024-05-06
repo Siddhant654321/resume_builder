@@ -2,6 +2,7 @@ import express from 'express';
 import 'dotenv/config';
 import cors from 'cors';
 import cookieParser from "cookie-parser";
+import connectDB from "./config/db.js";
 
 const corsOptions = {
   origin: process.env.FRONTEND_URL, 
@@ -9,6 +10,8 @@ const corsOptions = {
 };
 
 const app = express();
+
+connectDB();
 
 app.options('*', cors(corsOptions));
 app.use(cors(corsOptions))
