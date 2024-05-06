@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.auth_container p {
+.auth_container>div>div>p {
   color: #636364;
   text-align: center;
   font-family: var(--font-family);
@@ -34,6 +34,7 @@
   font-weight: 400;
   letter-spacing: 0.609px;
   margin: 10px 0px 35px 0px;
+  width: 461px;
 }
 
 .auth_ellipse_2 {
@@ -123,7 +124,7 @@
 }
 
 @media (max-width: 1130px) and (min-width: 926px) {
-    .auth_container p {
+    .auth_container>div>div>p {
         max-width: 350px;
         font-size: 18px;
         margin-bottom: 20px;
@@ -152,10 +153,11 @@
 }
 
 @media (max-width: 782px) {
-    .auth_container p {
+    .auth_container>div>div>p {
         max-width: 100%;
         font-size: 18px;
         margin-bottom: 20px;
+        width: auto;
     }
     .auth_container img {
         max-width: 100%;

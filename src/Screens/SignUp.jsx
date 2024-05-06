@@ -13,7 +13,6 @@ const SignUp = () => {
     password: '',
   }));
 
-  console.log(inputValue)
   return (
     <main className="auth_container">
       <BlurredSVG
