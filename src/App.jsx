@@ -1,4 +1,5 @@
 import Homepage from "./Screens/HomePage";
+import Login from "./Screens/Login";
 import SignUp from "./Screens/SignUp";
 import FooterSection from "./components/FooterSection";
 import Navbar from "./components/Navbar";
@@ -20,6 +21,7 @@ const App = () => {
       children: [
         { index: true, element: <Homepage /> },
         { path: '/signup', element: <SignUp /> },
+        { path: '/login', element: <Login /> },
       ],
     },
   ]);
