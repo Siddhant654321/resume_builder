@@ -3,6 +3,7 @@ import 'dotenv/config';
 import cors from 'cors';
 import cookieParser from "cookie-parser";
 import connectDB from "./config/db.js";
+import path from "path";
 
 const corsOptions = {
   origin: process.env.FRONTEND_URL, 
@@ -23,10 +24,23 @@ app.use(express.urlencoded({ extended: true }));
 // Cookie parser middleware
 app.use(cookieParser());
 
-app.get('/', (req, res) => {
-    res.send('Welcome')
-})
+const __dirname = path.resolve();
 
-const port = process.env.PORT || 3000
+// Serve static files and handle SPA routing in production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/dist")));
 
-app.listen(port, () => console.log(`Server is running on port ${port}`))
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "dist", "index.html")),
+  );
+} else {
+  // Development-specific settings
+  app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
+  app.get("/", (req, res) => {
+    res.send("API is running....");
+  });
+}
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Server is running on port ${port}`));
