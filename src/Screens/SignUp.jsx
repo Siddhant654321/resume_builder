@@ -36,7 +36,7 @@ const SignUp = () => {
         <div>
           <h2>GET STARTED</h2>
           <p>Please enter your details below to continue.</p>
-          <form>
+          <form className='auth_form'>
             <div className="input_field_container">
             <InputField
               title="NAME"
