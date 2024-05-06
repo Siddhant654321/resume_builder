@@ -1,15 +1,20 @@
 .feature_box {
     border-radius: 91px;
-    width: 532px;
-    height: 532px;
+    width: 434px;
+    height: 434px;
     box-shadow:
         0px 0px 250px -3px rgba(179, 13, 238, 0.2),
         inset 0px -19.86px 19.86px 0px rgba(213, 213, 213, 1),
         inset 0px 19.86px 19.86px 0px rgba(255, 255, 255, 1),
         0px 70.93px 141.87px 0px rgba(51, 51, 51, 0.191);
     background: linear-gradient(180deg, #ddd 0%, #fff 27.95%, #fff 100%);
-    margin-bottom: 130px;
+    margin: 0px 40px 100px 40px;
 }
+
+.feature_section h1 {
+    margin: 80px 0px 10px 0px;
+}
+
 body {
     backdrop-filter: blur(4px);
     background: #f8f8f8;
@@ -24,13 +29,14 @@ body {
     font-weight: 400;
 }
 
-.feature_container{
+.feature_container {
     display: flex;
     padding: 50px 50px 0px 50px;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.feature_subheading{
+
+.feature_subheading {
     font-weight: 400;
     font-size: 48px;
     line-height: 250%;
@@ -39,55 +45,51 @@ body {
     font-family: "Bebas Neue", sans-serif;
     text-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.25);
     padding-top: 30px;
+    margin: 30px 0px 0px 0px;
 }
-.feature_description{
+
+.feature_description {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 167%;
     text-align: center;
     color: #333;
-    padding: 0px 48px;
+    padding: 0px 32px;
+    margin: 0px;
 }
 
-@media (max-width: 1345px) and (min-width: 757px) {
-    .feature_container{
-        justify-content: space-between;
-    }
-}
+@media (max-width: 1134px) and (min-width: 757px) {
 
-@media (max-width: 1238px) {
     .feature_box {
         width: 400px;
         height: 400px;
+        margin: 0px 0px 60px 0px;
     }
-    .feature_subheading{
+
+    .feature_subheading {
         font-size: 32px;
-        padding-top: 30px;
+        padding: 60px 0px 40px 0px;
         line-height: 0;
-        margin-bottom: 60px;
     }
-    .feature_description{
+
+    .feature_description {
         font-size: 20px;
         line-height: 150%;
         padding: 0px 48px;
-    }  
-    .feature_container{
-        justify-content: space-around;
-    }  
-}
+    }
 
-@media (max-width: 1108px) and (min-width: 757px) {
-    .feature_box {
-        margin-bottom: 75px;
+    .feature_container {
+        justify-content: space-around;
     }
 }
 
 @media (max-width: 1000px) and (min-width: 757px) {
-    .feature_container{
+    .feature_container {
         justify-content: space-between;
         padding-top: 0px;
     }
+
     .section_main_heading {
         font-size: 64px;
     }
@@ -98,21 +100,25 @@ body {
         width: 300px;
         height: 300px;
     }
-    .feature_subheading{
+
+    .feature_subheading {
         font-size: 24px;
         margin-bottom: 40px;
+        padding: 25px 0px 0px 0px;
     }
-    .feature_description{
+
+    .feature_description {
         font-size: 16px;
         padding: 0px 30px;
-    }  
-    .feature_container{
+    }
+
+    .feature_container {
         justify-content: space-around;
     }
 }
 
 @media (max-width: 817px) and (min-width: 757px) {
-    .feature_container{
+    .feature_container {
         justify-content: space-between;
     }
 }
@@ -121,9 +127,11 @@ body {
     .section_main_heading {
         font-size: 64px;
     }
-    .feature_container{
+
+    .feature_container {
         padding: 0px 20px;
     }
+
     .feature_box {
         margin-bottom: 45px;
     }
@@ -133,22 +141,33 @@ body {
     .section_main_heading {
         font-size: 64px;
     }
-    .feature_container{
+
+    .feature_container {
         padding: 0px 20px;
+    }
+
+    .feature_description {
+        margin: 0px;
+    }
+
+    .feature_box {
+        margin: 45px 0px;
     }
 }
 
-@media (max-width: 457px) {
+@media (max-width: 480px) {
     .feature_box {
         width: 300px;
         height: 300px;
     }
-    .feature_subheading{
+
+    .feature_subheading {
         font-size: 24px;
-        margin-bottom: 40px;
+        margin: 0px;
     }
-    .feature_description{
+
+    .feature_description {
         font-size: 16px;
-        padding: 0px 30px;
-    }  
+        padding: 0px 12px;
+    }
 }
